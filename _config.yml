@@ -1,1 +1,111 @@
-theme: jekyll-theme-slate
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: http://temei.site
+date_format: "ordinal"
+title: 特眉 temei
+subtitle: "人生嗷嗷待哺"
+description: "特眉的个人博客"
+keywords: 码志, Zhuang Ma, mzlogin, mazhuang
+timezone: Asia/Zhuhai
+encoding: "utf-8"
+side_bar_repo_limit: 5
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Temei
+organization: 特眉
+organization_url: https://shop115394226.taobao.com/
+location: Zhuhai, China
+email: temei4fun@outlook.com、florar43@qq.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /categories/
+    label: 分类
+
+  -
+    href: /wiki/
+    label: 维基
+
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+repository: temei.github.io
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username: temei
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: temei
+    repo: blog-comments
+    oauth:
+        client_id: d226c249bba3fc34b605
+        client_secret: 9ca65553db2c9177ab426c3140e644af8b028c45
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: temei
+    repo: blog-comments
+    clientID: d226c249bba3fc34b605
+    clientSecret: 9ca65553db2c9177ab426c3140e644af8b028c45
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : true
+
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    analytics_id: UA-80669434-1
